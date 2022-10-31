@@ -73,6 +73,7 @@ packer.startup({
     use("hrsh7th/cmp-cmdline") -- { name = 'cmdline' }
     -- 常见编程语言代码段
     use("rafamadriz/friendly-snippets")
+    use({ "jose-elias-alvarez/nvim-lsp-ts-utils", requires = "nvim-lua/plenary.nvim" })
 
     if paccker_bootstrap then
       packer.sync()
